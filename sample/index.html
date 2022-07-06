@@ -117,16 +117,23 @@
 							'imageUpload', 'blockQuote', 'insertTable', 'mediaEmbed', '|',
 							'undo', 'redo', '|', 
 							'exportPDF' ],
+					exportPdf: {
+						converterOptions: {
+                			// Document format settings with proper margins.
+                			format: 'Letter',
+                			margin_top: '19mm',
+                			margin_bottom: '19mm',
+                			margin_right: '19mm',
+                			margin_left: '19mm',
+                			page_orientation: 'portrait'
+            				}
+					},
 					licenseKey: '',
 					
-					
-					
+			
 				} )
 				.then( editor => {
 					window.editor = editor;
-					
-			
-					
 					
 					
 				} )
